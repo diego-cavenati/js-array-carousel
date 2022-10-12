@@ -1,0 +1,30 @@
+/* Common rules */
+img {
+    max-width: 100%;
+}
+
+/* main */
+.slider { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.slides {
+    align-self: center;
+}
+
+.slides > img {
+    display: none;
+}
+
+.slides > img.active {
+    display: block;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
