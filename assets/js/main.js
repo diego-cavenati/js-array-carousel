@@ -37,20 +37,11 @@ nextElement.addEventListener('click', function() {
     slidesActive++;
     console.log(slidesActive);
     console.log(imgSlides.length);
-    // loop infinito
-    if (slidesActive > 5) {
-        
-        slidesActive = 0;
-        // selezione la slide che deve essere attiva
-        const nextSlideActive = allSlides[0];
-        // aggiungo la classe active e la rendo visibile
-        nextSlideActive.classList.add('active');
-    } else {
-        // selezione la slide che deve essere attiva
-        const nextSlideActive = allSlides[slidesActive];
-        // aggiungo la classe active e la rendo visibile
-        nextSlideActive.classList.add('active');
-    }
+   
+    // selezione la slide che deve essere attiva
+    const nextSlideActive = allSlides[slidesActive];
+    // aggiungo la classe active e la rendo visibile
+    nextSlideActive.classList.add('active');
 
 }
 )
